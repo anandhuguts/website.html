@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+AR:wght@100..400&family=Playwrite+BE+VLG:wght@100..400&family=Style+Script&family=Teko:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+           
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+        .whole {
+            width: 100%;
+            height: 100%;
+            background-image: url('./bac.jpg'); /* Use the correct image path */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Keeps the background fixed */
+        }
+        .navigation{
+            display:flex ;
+            width: 1920px;
+            height: 59px;
+           align-items: center;
+           gap: 90px;
+        }
+        
+        .logo{
+            width: 395px;
+            height: 59px;
+            color: #F77609;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 48px;
+            padding-left: 219px;
+            margin-top: 70px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+  }
+  .menu{
+    width: 926px;
+    height: 59px;
+    align-items: center;
+    margin-left: 300px;
+    margin-top: 70px;
+  }
+  .options{
+    display: flex;
+    gap: 61px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+  }
+  .options li{
+    list-style: none;
+    font-size: 24px;
+  }
+  .options li a{
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            transition: 0.4s ease-in-out;
+            color: white;
+  }
+  .options li a:hover{
+    color: #F77609;
+  }
+  .searchdiv{
+    display: flex;
+    width: 283px;
+    height: 51px;
+    margin-top: 70px;
+    margin-left: 166px;
+  }
+  .search{
+    background: none;
+    border: 2px solid #F77609;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 8px;
+    padding-right: 27px;
+    border-radius: 3px 0px 0px 3px;
+  }
+  .search::placeholder{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            
+  }
+  .btn{
+    color: white;
+    background-color: #F77609;
+    border: none;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 10px ;
+    padding-right: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            border-radius: 0px 0px 7px 7px;
+            margin-left: -10px;
+            
+  }
+  .webdesign{
+    
+    width: 933px;
+    height:330px ;
+    margin-top: 271px;
+    margin-left: 207px;
+    
+  }
+  .web{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    color: white;
+    list-style: none;
+  }
+  .web1{
+    font-size: 84px;
+    font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight:600;
+  font-style: normal;
+  }
+  .web2{
+    font-size: 102px;
+    color: #F77609;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+  }
+  .para{
+    width: 1133px;
+    height: 159px;
+  }
+  .paragraph{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 22px;
+            margin-left: 207px;
+            line-height:50px;
+            margin-top: 60px;
+            margin-bottom: 17px ;
+
+  }
+  .butto{
+    width: 159px;
+    height: 41px;
+    margin-top: 70px;
+    margin-left: 207px;
+  }
+  .btns{
+    background-color: #F77609;
+    border: none;
+    padding: 6px 29px 6px 29px;
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+  }
+  .btns:hover{
+    background-color: white;
+  }
+  .ang{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 24px;
+            
+  }
+ 
+  .grid{
+    display: grid;
+    grid-template-columns: 1140px 780px ;
+    column-gap: 500px;
+    
+    
+  }
+  .content{
+    width: 1140px;
+    height: 654px;
+    
+  }
+  .transparent{
+    width: 481px;
+    height: 643px;
+   background-color: rgba(0, 0, 0, 0.6);
+   margin-top: 271px;
+   border-radius: 31px;
+   display: flex;
+   flex-direction: column;
+   
+    
+    
+  }
+  .login{
+
+   height: 44px;
+   width: 217px;
+    text-decoration: none;
+    background-color: white;
+    color: #F77609;
+    font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 36px;
+            text-align: center;
+            padding: 11px 73px;
+            margin-top: 36px;
+            margin-left: 59px;
+            border-radius: 7px;
+            
+  }
+  .em{
+    color:white;
+    margin-top: 48px;
+    margin-left: 59px;
+    font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 24px;
+  }
+  .email{
+    width: 361px;
+    margin-top: 24px;
+    margin-left: 59px;
+    background-color:transparent;
+    border: none;
+    border-bottom: 1px solid #F77609 ;
+  }
+  .bt{
+    height: 74px;
+   width: 363px;
+    background-color: #F77609;
+    margin-left: 59px;
+    margin-top: 48px;
+    border-radius: 7px;
+
+  }
+  .log{
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 36px;
+            color: black;
+  }
+  .sign{
+    text-align: center;
+    margin-left: 9px;
+    margin-top: 38px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 40px;
+  }
+  .up{
+    text-decoration: none;
+    color: #F77609;
+  }
+ 
+    
+    </style>
+</head>
+<body>
+    <div class="whole">
+        <div class="navigation">
+           <div class="logo">PraRoz
+
+           </div>
+           <div class="menu">
+            <ul class="options">
+               <li><a href="">HOME</a></li>
+               <li><a href="">ABOUT</a></li>
+               <li><a href="">SERVICE</a></li>
+               <li><a href="">DESIGN</a></li>
+               <li><a href="">CONTACT</a></li>
+               
+            </ul>
+            </div>
+            
+            <div class="searchdiv">
+                <input class="search" type="search" name="" placeholder="Type To text" id="">
+                <a href="#"><button class="btn">Search</button></a>
+            </div>
+           </div>
+           <div class="grid">
+            <div class="content">
+           <div class="webdesign">
+           <ul class="web">
+            <li class="web1">Web Design&</li>
+            <li class="web2">Development</li>
+            <li class="web1">Course</li>
+            </ul>
+  
+          </div>
+          <div class="para">
+            <p class="paragraph">Turpis ultricies nisl praesent et amet. Accumsan consectetur pellentesque auctor 
+              cras ultrices nunc a. Posuere accumsan maecenas quam turpis amet. Id libero 
+              cras quis tincidunt tortor. Nunc feugiat <br> 
+              vestibulum vel risus.</p>
+
+          </div> 
+          <div class="butto">
+            <button class="btns"><a class="ang" href="#">JOIN US</a></button>
+          </div>
+        </div>
+          
+          <div class="transparent">
+            <a class="login" href="#">Log in Here</a>
+            <label for="email" class="em">Enter Email Here</label>
+            <input type="email" class="email">
+
+            <label for="email" class="em">Enter Password Here</label>
+            <input type="email" class="email">
+
+            <button class="bt"><a class="log" href="#">Login</a></button>
+
+            <div class="sign">Dont have an account <br><a class="up" href="#">Sign Up</a> here <br>log in with</div>
+            
+
+            
+
+
+          </div>
+        </div>
+
+        </div>
+       
+        
+    </div>
+</body>
+</html>
